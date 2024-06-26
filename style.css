@@ -1,0 +1,121 @@
+:root {
+  --font-base: Roboto, sans-serif;
+  --bg-color-primary: #2e3142;
+  --text-color-primary: #2e3142;
+  --link-color-primary: #1696e0;
+  --button-bg-color-primary: #1696e0;
+  --button-text-color-primary: white;
+}
+
+body {
+  font-family: var(--font-base);
+  letter-spacing: 0.05em;
+}
+
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.bg-custom {
+  background-color: #2e3142;
+}
+
+.nav-link-white {
+  color: white !important;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700 !important;
+}
+
+.btn-white {
+  color: white;
+}
+
+.request-btn {
+  height: 3em;
+  font-weight: 700 !important;
+  background-color: var(--button-bg-color-primary) !important;
+}
+
+.card-no-border {
+  border: none !important;
+}
+
+.card-body {
+  background-color: #f7f8fa;
+}
+
+.my-border-line {
+  border-top: 1px solid grey;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+footer {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap !important;
+}
+
+/* .slick-dots li button {
+  display: none !important;
+} */
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0 0.3125em;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 1.25em;
+  height: 1.25em;
+  padding: 0.3125em;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li button:before {
+  content: '•';
+  font-size: 36px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: black;
+}

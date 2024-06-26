@@ -1,18 +1,18 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TEST</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta
       http-equiv="X-UA-Compatible"
       content="IE=edge"
     />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1"
+      content="width=device-width, initial-scale=1.0"
     />
     <link
       rel="stylesheet"
-      href="./css/style.css"
+      href="style.css"
     />
     <link
       rel="preconnect"
@@ -29,323 +29,466 @@
     />
     <link
       rel="stylesheet"
-      href="./css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Oxygen</title>
   </head>
-  <body class="">
-    <!-- header -->
-    <header style="background-color: var(--bg-color-primary)">
-      <nav class="p-4 d-flex align-items-center justify-content-between">
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-md bg-custom py-3 fixed-top"
+      style="font-family: 'Proxima Nova', sans-serif"
+    >
+      <div class="container">
         <a
-          class="me-3"
           href="#"
-        >
-          <img
+          class="navbar-brand"
+          ><img
             src="./img/img-logo-white.png"
             alt="logo"
-          />
-        </a>
-        <!-- <div class="d-none d-md-flex align-items-center">
-          <a
-            class="me-3"
-            href="#"
-            >About</a
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navmenu"
+        >
+          <ul
+            class="navbar-nav ms-auto align-items-center justify-content-center"
           >
-          <a
-            class="me-3"
-            href="#"
-            >Our Services</a
-          >
-          <a
-            class="me-3"
-            href="#"
-            >Contact</a
-          >
-          <button class="btn btn-primary">Request A Quote</button>
-        </div> -->
-        <nav class="navbar navbar-expand-md">
-          <button
-            class="navbar-toggler text-white"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse"
-            id="navbarNav"
-          >
-            <div class="navbar-nav">
+            <li class="nav-item me-4">
               <a
-                class="nav-link me-3"
                 href="#"
+                class="nav-link nav-link-white"
                 >About</a
               >
+            </li>
+            <li class="nav-item me-4">
               <a
-                class="nav-link me-3"
                 href="#"
+                class="nav-link nav-link-white"
                 >Our Services</a
               >
+            </li>
+            <li class="nav-item me-4">
               <a
-                class="nav-link me-3"
                 href="#"
+                class="nav-link nav-link-white"
                 >Contact</a
               >
-              <button class="btn btn-primary">Request A Quote</button>
-            </div>
-          </div>
-        </nav>
-      </nav>
-    </header>
-
-    <!-- hero -->
-    <div class="row pt-5">
-      <div
-        class="p-4 d-flex flex-column-reverse flex-md-row align-items-center justify-content-center"
-      >
-        <div class="col">
-          <img
-            src="./img/img-2-men-talking.png"
-            alt="img-2-men-talking"
-          />
-        </div>
-        <div class="col">
-          <h1>The First HubSpot Diamond Partner In Greater China</h1>
-          <h2>China HubSpot & CRM Integration Specialist</h2>
-          <p>
-            Oxygen is China’s premier HubSpot Diamond Solutions Partner. We
-            create digital leaders through unifying marketing, sales, and
-            customer service operations on HubSpot in China and internationally.
-            We were conceived in Shenzhen, built in Hong Kong and are now a team
-            of 25+ full-time HubSpot and China digital experts globally and
-            offer support in English, Cantonese and Mandarin.
-          </p>
+            </li>
+            <li class="nav-item me-4">
+              <button class="btn btn-primary request-btn">
+                Request A Quote
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-    <!-- lastest articles -->
-    <div
-      class="pt-5 pb-5"
+    </nav>
+
+    <!-- Hero -->
+    <section
+      id="hero"
+      class="p-5"
+    >
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img
+              src="img/img-2-men-talking.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-md p-5">
+            <h1>The First HubSpot Diamond Partner In Greater China</h1>
+            <h3>China HubSpot & CRM Integration Specialist</h3>
+            <p>
+              Oxygen is China’s premier HubSpot Diamond Solutions Partner. We
+              create digital leaders through unifying marketing, sales, and
+              customer service operations on HubSpot in China and
+              internationally. We were conceived in Shenzhen, built in Hong Kong
+              and are now a team of 25+ full-time HubSpot and China digital
+              experts globally and offer support in English, Cantonese and
+              Mandarin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section
+      class="p-5"
+      id="blog"
       style="background-color: #f7f8fa"
     >
-      <h1 class="text-center">Read our Latest Articles</h1>
-      <div class="slick-carousel d-flex justify-content-around">
-        <div class="narrow-div">
-          <img
-            src="./img/img-2-men-talking.png"
-            alt="Image 1"
-          />
-          <h1>Sample Blog #1</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            malesuada, nunc non egestas lacinia, nunc nulla lacinia
-          </p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="narrow-div">
-          <img
-            src="./img/img-2-men-talking.png"
-            alt="Image 1"
-          />
-          <h1>Sample Blog #2</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            malesuada, nunc non egestas lacinia, nunc nulla lacinia
-          </p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="narrow-div">
-          <img
-            src="./img/img-2-men-talking.png"
-            alt="Image 1"
-          />
-          <h1>Sample Blog #3</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            malesuada, nunc non egestas lacinia, nunc nulla lacinia
-          </p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="narrow-div">
-          <img
-            src="./img/img-2-men-talking.png"
-            alt="Image 1"
-          />
-          <h1>Sample Blog #4</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            malesuada, nunc non egestas lacinia, nunc nulla lacinia
-          </p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="narrow-div">
-          <img
-            src="./img/img-2-men-talking.png"
-            alt="Image 1"
-          />
-          <h1>Sample Blog #5</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            malesuada, nunc non egestas lacinia, nunc nulla lacinia
-          </p>
-          <a href="#">Read More</a>
-        </div>
-        <div class="narrow-div">
-          <img
-            src="./img/img-2-men-talking.png"
-            alt="Image 1"
-          />
-          <h1>Sample Blog #6</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            malesuada, nunc non egestas lacinia, nunc nulla lacinia
-          </p>
-          <a href="#">Read More</a>
+      <div class="container">
+        <h1 class="text-center">Read our Latest Articles</h1>
+        <div class="carousel pt-4 row text-center g-4">
+          <div class="col-md">
+            <div class="card card-no-border">
+              <div
+                class="card-body text-start"
+                style="background-color: #f7f8fa"
+              >
+                <div class="h1 mb-3">
+                  <img
+                    src="img/img-2-men-talking.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h3 class="card-title mb-3">Sample Blog #1</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a
+                  href="#"
+                  class="btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card card-no-border">
+              <div
+                class="card-body text-start"
+                style="background-color: #f7f8fa"
+              >
+                <div class="h1 mb-3">
+                  <img
+                    src="img/img-2-men-talking.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h3 class="card-title mb-3">Sample Blog #2</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a
+                  href="#"
+                  class="btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card card-no-border">
+              <div
+                class="card-body text-start"
+                style="background-color: #f7f8fa"
+              >
+                <div class="h1 mb-3">
+                  <img
+                    src="img/img-2-men-talking.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h3 class="card-title mb-3">Sample Blog #3</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a
+                  href="#"
+                  class="btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card card-no-border">
+              <div
+                class="card-body text-start"
+                style="background-color: #f7f8fa"
+              >
+                <div class="h1 mb-3">
+                  <img
+                    src="img/img-2-men-talking.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h3 class="card-title mb-3">Sample Blog #4</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a
+                  href="#"
+                  class="btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card card-no-border">
+              <div
+                class="card-body text-start"
+                style="background-color: #f7f8fa"
+              >
+                <div class="h1 mb-3">
+                  <img
+                    src="img/img-2-men-talking.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h3 class="card-title mb-3">Sample Blog #5</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a
+                  href="#"
+                  class="btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card card-no-border">
+              <div
+                class="card-body text-start"
+                style="background-color: #f7f8fa"
+              >
+                <div class="h1 mb-3">
+                  <img
+                    src="img/img-2-men-talking.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h3 class="card-title mb-3">Sample Blog #6</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a
+                  href="#"
+                  class="btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card card-no-border">
+              <div
+                class="card-body text-start"
+                style="background-color: #f7f8fa"
+              >
+                <div class="h1 mb-3">
+                  <img
+                    src="img/img-2-men-talking.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h3 class="card-title mb-3">Sample Blog #7</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a
+                  href="#"
+                  class="btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card card-no-border">
+              <div
+                class="card-body text-start"
+                style="background-color: #f7f8fa"
+              >
+                <div class="h1 mb-3">
+                  <img
+                    src="img/img-2-men-talking.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h3 class="card-title mb-3">Sample Blog #8</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a
+                  href="#"
+                  class="btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card card-no-border">
+              <div
+                class="card-body text-start"
+                style="background-color: #f7f8fa"
+              >
+                <div class="h1 mb-3">
+                  <img
+                    src="img/img-2-men-talking.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h3 class="card-title mb-3">Sample Blog #9</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a
+                  href="#"
+                  class="btn-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- our client -->
-    <div class="pt-5">
-      <h1 class="text-center">Our Clients</h1>
-      <div class="d-none d-md-flex align-items-center justify-content-center">
-        <img
-          class="me-3"
-          src="./img/img-logo-red.png"
-          alt="logo"
-        />
-        <img
-          class="me-3"
-          src="./img/img-logo-red.png"
-          alt="logo"
-        />
-        <img
-          class="me-3"
-          src="./img/img-logo-red.png"
-          alt="logo"
-        />
-        <img
-          class="me-3"
-          src="./img/img-logo-red.png"
-          alt="logo"
-        />
-        <img
-          class="me-3"
-          src="./img/img-logo-red.png"
-          alt="logo"
-        />
-        <img
-          src="./img/img-logo-red.png"
-          alt="logo"
-        />
-      </div>
-      <div
-        class="row row-cols-2 row-cols-md-6 align-items-center justify-content-center d-md-none"
-      >
-        <div class="col">
+    </section>
+
+    <section
+      id="our-clients"
+      class="p-5"
+    >
+      <div class="container">
+        <h2 class="text-center mb-4">Our Clients</h2>
+        <div class="d-flex justify-content-center flex-wrap flex-md-nowrap">
           <img
-            class="img-fluid"
+            class="img-fluid me-3 col-4 col-md-2"
             src="./img/img-logo-red.png"
             alt="logo"
           />
-        </div>
-        <div class="col">
           <img
-            class="img-fluid"
+            class="img-fluid me-3 col-4 col-md-2"
             src="./img/img-logo-red.png"
             alt="logo"
           />
-        </div>
-        <div class="col">
           <img
-            class="img-fluid"
+            class="img-fluid me-3 col-4 col-md-2"
             src="./img/img-logo-red.png"
             alt="logo"
           />
-        </div>
-        <div class="col">
           <img
-            class="img-fluid"
+            class="img-fluid me-3 col-4 col-md-2"
             src="./img/img-logo-red.png"
             alt="logo"
           />
-        </div>
-        <div class="col">
           <img
-            class="img-fluid"
+            class="img-fluid me-3 col-4 col-md-2"
             src="./img/img-logo-red.png"
             alt="logo"
           />
-        </div>
-        <div class="col">
           <img
-            class="img-fluid"
+            class="img-fluid me-3 col-4 col-md-2"
             src="./img/img-logo-red.png"
             alt="logo"
           />
         </div>
       </div>
-    </div>
-    <!-- footer -->
-    <footer style="background-color: var(--bg-color-primary)">
-      <div
-        class="d-flex flex-column flex-md-row align-items-start align-md-center"
-      >
-        <a
-          class="me-3"
-          href="#"
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-custom text-white text-start">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row align-items-start align-items-md-center"
         >
-          <img
-            src="./img/img-logo-white.png"
-            alt="logo"
-          />
-        </a>
-        <a
-          class="me-3"
-          href="#"
-          >About</a
-        >
-        <a
-          class="me-3"
-          href="#"
-          >Our Services</a
-        >
-        <a
-          class="me-3"
-          href="#"
-          >Contact</a
-        >
-      </div>
-      <hr class="my-border-line" />
-      <div>
-        <h5>Hong Kong Head Office</h5>
-        <p>G/F, 5-13 New Street Sai Ying Pun Hong Kong</p>
-      </div>
-      <div>
-        <h5>Shenzhen, China Office</h5>
-        <p>
-          9th Floor, Tower B, TCL Building, 6 Gao Xin Nan Yi Street, Nanshan,
-          Shenzhen
-        </p>
+          <a
+            href="#"
+            class="me-5 navbar-brand"
+            ><img
+              src="./img/img-logo-white.png"
+              alt="logo"
+          /></a>
+          <div class="d-flex flex-column flex-md-row pt-4 pt-md-0">
+            <a
+              href="#"
+              class="me-5 nav-link nav-link-white"
+              >About</a
+            >
+            <a
+              href="#"
+              class="me-5 nav-link nav-link-white"
+              >Our Services</a
+            >
+            <a
+              href="#"
+              class="me-5 nav-link nav-link-white"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <hr class="my-border-line" />
+        <div class="pt-4">
+          <h5>Hong Kong Head Office</h5>
+          <p>G/F, 5-13 New Street Sai Ying Pun Hong Kong</p>
+          <h5>Shenzhen, China Office</h5>
+          <p>
+            9th Floor, Tower B, TCL Building, 6 Gao Xin Nan Yi Street, Nanshan,
+            Shenzhen
+          </p>
+        </div>
       </div>
     </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-      $(document).ready(function(){
-        $('.slick-carousel').slick({
+      $(document).ready(function () {
+        $('.carousel').slick({
+          dots: true,
+          arrows: false,
           infinite: true,
           slidesToShow: 3,
-          slidesToScroll: 1
+          slidesToScroll: 3,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
         });
       });
     </script>
